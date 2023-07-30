@@ -21,6 +21,9 @@ const Weather = ({ weather, location, fetchWeatherAndLocation, tempScale }) => {
   const temperature = (temp) => {
     return tempScale === 'celsius' ? kelvinToCelsius(temp) : kelvinToFahrenheit(temp);
   };
+  function capitalizeFirstLetter(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  }
 
   const renderWeather = () => {
     if (Object.keys(weather).length !== 0 && Object.keys(location).length !== 0) {
@@ -41,7 +44,7 @@ const Weather = ({ weather, location, fetchWeatherAndLocation, tempScale }) => {
               <WeatherDescription temperature={temperature} />
             </div>
             <div className="col-12 my-5 text-center order-md-2">
-              Hôm nay: {weather.current.weather[0].description}. Nhiệt độ cao nhất:{' '}
+              Hôm nay: {capitalizeFirstLetter(weather.current.weather[0].description)}. Nhiệt độ cao nhất:{' '}
               {temperature(weather.daily[0].temp.max)}. Nhiệt độ ban đêm:{' '}
               {temperature(weather.daily[0].temp.night)}.
             </div>
