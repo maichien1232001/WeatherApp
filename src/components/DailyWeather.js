@@ -43,20 +43,20 @@ const DailyWeather = ({ weather, temperature }) => {
     <div className="container">
       <div className="mb-4 list-group list-group-flush">
         <div className="list-group-item d-flex justify-content-center align-items-center row px-0 py-md-0 border-bottom text-center day-header">
-          <div className="col text-left d-none d-md-block d-lg-block d-xl-block text-muted">
+          <div className="col text-left d-md-block d-lg-block d-xl-block text-muted">
             <p>Ngày</p>
           </div>
-          <div className="col d-none d-md-block d-lg-block d-xl-bloc text-mutedk"></div>
-          <div className="col d-none d-md-block d-lg-block d-xl-block text-muted">
+          <div className="col d-md-block d-lg-block d-xl-bloc text-muted"></div>
+          <div className="col d-md-block d-lg-block d-xl-block text-muted">
             <p>Khả năng mưa</p>
           </div>
-          <div className="col d-none d-md-block d-lg-block d-xl-block text-muted">
+          <div className="col d-md-block d-lg-block d-xl-block text-muted">
             <p>Độ ẩm</p>
           </div>
-          <div className="col text-right d-none d-md-block d-lg-block d-xl-block text-muted">
+          <div className="col text-right d-md-block d-lg-block d-xl-block text-muted">
             <p>Nhiệt độ thấp nhất</p>
           </div>
-          <div className="col text-right d-none d-md-block d-lg-block d-xl-block text-muted">
+          <div className="col text-right d-md-block d-lg-block d-xl-block text-muted">
             <p>Nhiệt độ cao nhất</p>
           </div>
         </div>
