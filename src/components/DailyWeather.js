@@ -32,9 +32,8 @@ const DailyWeather = ({ weather, temperature }) => {
             <p className=" ml-2 mb-0">{temperature(day.temp.min)} </p>
           </div>
           <div className="col d-flex flex-row justify-content-center">
-          <p className=" mb-0">{temperature(day.temp.max)}</p>
+            <p className=" mb-0">{temperature(day.temp.max)}</p>
           </div>
-            
         </div>
       );
     });
